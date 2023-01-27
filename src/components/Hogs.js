@@ -71,9 +71,9 @@ function Hogs({hogs, setHogs}){
                     onGreasedClick={handleGreasedClick}
                     onCategoryChange={handleCategoryChange}
                 />
-
+                
                 {hogs.map(hog => (
-                    <Hog  key={hog.name} image={hog.image} 
+                    <Hog key={hog.name} image={hog.image} 
                         name={hog.name} specialty={hog.specialty} weight={hog.weight} 
                         greased={hog.greased ? "Greased" : "Not greased"} medal={hog["highest medal achieved"]}
                     />
